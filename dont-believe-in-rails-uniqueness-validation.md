@@ -3,21 +3,21 @@
 
 We have several ways to validate data before it is saved into your database, Rails model-level  validation is one of them, *eg: username of users must be unique*
 
-      class User < ActiveRecord::Base
-         validates :username, uniqueness: true
-      end
+    class User < ActiveRecord::Base
+       validates :username, uniqueness: true
+    end
 
 However, we have a GAP. Try to run two scripts below in two separate rails console at the same time:
 
-      User.transaction do
-         user1 = User.create username: “nus”
-         sleep 15
-      end
+    User.transaction do
+       user1 = User.create username: “nus”
+       sleep 15
+    end
 
-      User.transaction do
-          user2 = User.create username: “nus”
-          sleep 10
-      end
+    User.transaction do
+        user2 = User.create username: “nus”
+        sleep 10
+    end
 
 Despite Rails validation declares username uniqueness rule, the result is we still have 2 user records with same *"nus"* username after both transaction.
 
@@ -35,18 +35,18 @@ When `User.create` is executed, Rails will check validation for instance of User
 
 Take a look example of MySQL database constraint as below:
 
-      ALTER TABLE users
-      ADD CONSTRAINT users_uniq_username UNIQUE (username)
+    ALTER TABLE users
+    ADD CONSTRAINT users_uniq_username UNIQUE (username)
 
 
 OR you can add index on username column of users table:
 
 
-      class AddIndexToUsers < ActiveRecord::Migration
-        def change
-          add_index :users, [:username], unique: true
-        end
+    class AddIndexToUsers < ActiveRecord::Migration
+      def change
+        add_index :users, [:username], unique: true
       end
+    end
 
 ### Summary
 
