@@ -5,9 +5,9 @@
 
 If you're a Rails guy, you always hear that you should not use **pure string condition** because it is not safe. Here is the note from Rails guide official page:
 
-    > Building your own conditions as pure strings can leave you vulnerable to SQL injection exploits.
-    For example, Client.where("first_name LIKE '%#{params[:first_name]}%'") is not safe.
-    See the next section for the preferred way to handle conditions using an array.
+>Building your own conditions as pure strings can leave you vulnerable to SQL injection exploits.
+>For example, Client.where("first_name LIKE '%#{params[:first_name]}%'") is not safe.
+>See the next section for the preferred way to handle conditions using an array.
 
 Especially if you're a NUSer, at the first days you got familiar with Rails your trainer always told you that you shouldn't use **pure string conditions** when building a sql query. But your trainer might not tell you why we shouldn't use it in details. Do you ever wonder why we should not use it, why it is not safe? The problem of  **pure string SQL** (I call **pure string SQL** because in this post we will investigate on many SQL clauses instead of just only **WHERE** clause) is SQL Injections. Hacker can make your database go to hell just by some very simple words if you use **pure string SQL** and you do not have any concern about SQL Injections.
 
