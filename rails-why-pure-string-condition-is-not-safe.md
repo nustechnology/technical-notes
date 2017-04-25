@@ -1,7 +1,7 @@
 # Rails - Why pure string condition is not safe?
 
 
-![](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2016/09/1473921124injection-attack.jpg)
+![](assets/images/rails-why-pure-string-condition-is-not-safe/injection.jpg)
 
 If you're a Rails guy, you always hear that you should not use **pure string condition** because it is not safe. Here is the note from Rails guide official page:
 
