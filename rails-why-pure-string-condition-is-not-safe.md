@@ -9,9 +9,9 @@ If you're a Rails guy, you always hear that you should not use **pure string con
     For example, Client.where("first_name LIKE '%#{params[:first_name]}%'") is not safe.
     See the next section for the preferred way to handle conditions using an array.
 
-Especially if you're a NUSer, at the first days you got familiar with Rails your trainer always told you that you shouldn't use **pure string conditions** when building a sql query. But I'm sure that your trainer did not told you why we shouldn't use it in details, right? Have you ever wonder why we should not use it, why it is not safe? The problem of  **pure string SQL** (I call **pure string SQL** because in this post we will investigate on many SQL clauses instead of just only **WHERE** clause) is SQL Injections. Hacker can make your database go to hell just by some very simple words if you use **pure string SQL** and you do not have any concern about SQL Injections.
+Especially if you're a NUSer, at the first days you got familiar with Rails your trainer always told you that you shouldn't use **pure string conditions** when building a sql query. But your trainer might not tell you why we shouldn't use it in details. Do you ever wonder why we should not use it, why it is not safe? The problem of  **pure string SQL** (I call **pure string SQL** because in this post we will investigate on many SQL clauses instead of just only **WHERE** clause) is SQL Injections. Hacker can make your database go to hell just by some very simple words if you use **pure string SQL** and you do not have any concern about SQL Injections.
 
-To clarify what I said above, I'll give you some examples to show you how hacker ca make you hurt easily! And I also tell you how to keep your code safe in these examples.
+To clarify what I said above, I'll give you some examples to show you how hacker can make you hurt easily! And I also tell you how to keep your code safe in these examples.
 
 ### Injection in **delete_all**
 
@@ -22,7 +22,7 @@ This snippet deletes all users despite any conditions:
 
 Here is the generated sql query: `DELETE FROM "users" WHERE (id = 1) OR 1=1--)`
 
-**To be be safe, never pass user input directly to delete_all method.**
+**To be safe, never pass user input directly to delete_all method.**
 
 ### Injection in **exists?**
 
@@ -36,7 +36,7 @@ Because Rails will automatically convert parameters to arrays or hashes, hacker 
 
 This query will always return **true**. 
 
-**To be be safe, always convert user’s input to a string or integer if using it as the primary key in `exists?`**
+**To be safe, always convert user’s input to a string or integer if using it as the primary key in `exists?`**
 
 ### Injection in **pluck**
 
