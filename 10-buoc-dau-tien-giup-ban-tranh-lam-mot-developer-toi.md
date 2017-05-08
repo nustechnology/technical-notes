@@ -2,6 +2,8 @@
 
 Bài viết này sẽ không hô biến bạn trở thành một developer giỏi ngay lập tức, nhưng nó sẽ giúp bạn tránh làm một developer tồi và sẽ thiết thực cho các bạn đang là fresher hơn.
 
+Đầu tiên là một định hướng phát triển mà tác giả đang theo đuổi cũng như phần lớn cộng đồng, ngoài ra các định hướng khác như phát triển chuyên sâu vào một mảng(front-end, back-end...) vẫn là những định hướng tốt.
+
 ## Phát triển theo định hướng full stack
 
 Bạn luôn muốn mình làm được một sản phẩm hoàn chỉnh chứ không phải là một phần của nó và khi thiếu những người khác sản phẩm của bạn chẳng thể hoàn chỉnh chứ?
