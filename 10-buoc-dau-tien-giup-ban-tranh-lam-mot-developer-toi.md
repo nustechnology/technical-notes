@@ -2,13 +2,13 @@
 
 Bài viết này sẽ không hô biến bạn trở thành một developer giỏi ngay lập tức, nhưng nó sẽ giúp bạn tránh làm một developer tồi và sẽ thiết thực cho các bạn đang là fresher hơn.
 
-Đầu tiên là một định hướng phát triển mà tác giả đang theo đuổi cũng như phần lớn cộng đồng, ngoài ra các định hướng khác như phát triển chuyên sâu vào một mảng(front-end, back-end...) vẫn là những định hướng tốt.
+Đầu tiên là một định hướng phát triển mà tác giả đang theo đuổi cũng như phần lớn cộng đồng, ngoài ra các định hướng khác như phát triển chuyên sâu vào một mảng (front-end, back-end...) vẫn là những định hướng tốt.
 
 ## Phát triển theo định hướng full stack
 
 Bạn luôn muốn mình làm được một sản phẩm hoàn chỉnh chứ không phải là một phần của nó và khi thiếu những người khác sản phẩm của bạn chẳng thể hoàn chỉnh chứ?
 
-Thử nghĩ nếu bạn rành hết về git, front-end(html, css, javascript, bootstrap, jquery...) , back-end(Ruby on rails, PHP...), deployment, performances, best practices, docker... có ngầu không?
+Thử nghĩ nếu bạn rành hết về git, front-end (html, css, javascript, bootstrap, jquery...) , back-end (Ruby on rails, PHP...), deployment, performances, best practices, docker... có ngầu không?
 
 ## Loại bỏ dần các thói quen sinh viên
 
@@ -39,6 +39,7 @@ Công việc sẽ không hề hiệu quả.
 
 ## Tự mình đặt ra những câu hỏi cần thiết và có thể tự trả lời
 Ví dụ một ngày đi làm 8 tiếng, bạn làm việc hiệu quả bao nhiêu tiếng?
+
 Trong một phần chương trình đào tạo, tự mình đặt câu hỏi và trả lời hay phải đợi người ta hỏi gì mình mới biết học cái đấy?
 
 ## Bạn làm gì trong thời gian rảnh rỗi sẽ trả lời mức độ bạn thành công ra sao?
@@ -52,9 +53,9 @@ Bạn giỏi kỹ thuật, nhưng luôn phải nhờ người khác nói chuyệ
 Vò tai bức tóc khi phải viết một cái email, hay khách hàng cần bạn giải thích một chức năng nào đó.
 Nếu bạn vừa giỏi kỹ thuật, vừa có khả năng về ngoại ngữ, cơ hội sẽ rộng mở hơn rất nhiều.
 
-## Bạn chỉ quan trọng mình có tư duy tốt, cái gì bạn thích bạn sẽ học được, nhanh thôi? + Kết hợp với việc coi thường kiến thức cơ bản
+## Bạn chỉ quan trọng mình có tư duy tốt, cái gì bạn thích bạn sẽ học được, nhanh thôi?
 Tư duy đó có phần đúng nhưng không hề đúng hoàn toàn.
-Bạn có tư duy tốt, bạn sẽ nghĩ ra giải pháp. Giả sử những phần như kiến thức về kiểu dữ liệu của Javascript và Ruby, có những hàm rất cơ bản và đơn giản, bạn lười, ỷ vào tư duy không cần nắm kỹ, bạn sẽ không biết và nhớ về chúng.
+Bạn có tư duy tốt, bạn sẽ nghĩ ra giải pháp. Giả sử những phần như kiến thức về kiểu dữ liệu của Javascript và Ruby, có những hàm rất cơ bản và đơn giản, bạn lười, ỷ vào tư duy không cần nắm kỹ, bạn sẽ không biết và nhớ về chúng; kết hợp với việc coi thường kiến thức cơ bản.
 
 Đến lúc xử lý một bài toán nào đó, bạn sẽ cố gắng tự định nghĩa lại một thứ đã có sẵn, tất nhiên nó sẽ tốn thời gian, công sức và không may có thể thứ bạn xây dựng nên hiệu năng kém xa thứ có sẵn và nó còn rất nhiều lỗi nữa.
 
@@ -62,7 +63,7 @@ Hoặc bạn sẽ nói bạn sẽ nhớ mang máng rồi tìm kiếm lại.
 
 Nhưng những bạn nắm kỹ về cơ bản người ta chỉ cần 0.001 giây để làm xong, còn các bạn sẽ cần 3 phút, 30 phút thậm chí 8 tiếng. Chi phí bỏ ra sẽ luôn công bằng.
 
-Một ví dụ về cách bạn [đặt tên biến và tên hàm](https://goo.gl/brZuvY) - tham khảo bài viết của anh Chien Tran
+Một ví dụ về cách bạn [đặt tên biến và tên hàm](https://goo.gl/brZuvY) - tham khảo bài viết của anh Chien Tran.
 
 ## Chịu trách nhiệm cho những thứ bạn làm
 Nếu bạn tiếp tục làm việc mà luôn phải có người đi "dọn rác" cho bạn thì bạn sẽ có sự ỉ lại và không cố gắng hết sức.
