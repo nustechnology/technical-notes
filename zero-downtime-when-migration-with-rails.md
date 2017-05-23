@@ -49,15 +49,16 @@ Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đ�
   - Không an toàn. Nguyên nhân bởi vì quá trình tạo indexes sẽ lock database một khoảng thời gian nhất định
   - Cách xử lý:
     + Tùy từng loại database ta có những cách xử lý khác nhau.
-    + Với MySQL thì ta có thể sử dụng gem 'lhm' (https://github.com/soundcloud/lhm).
-    + Với PostgreSQL thì có thể sử dụng option concurrently (http://postgresguide.com/performance/indexes.html). 
-        * Về cơ bản v
+    + Với MySQL thì ta có thể sử dụng [gem 'lhm'](https://github.com/soundcloud/lhm).
+        * Ý tưởng cơ bản của gem 'lhm' là tạo ra `temporary table` khi thực hiện quá trình migration. Điều này sẽ tránh việc khóa bảng trong quá trình migration.
+    + Với PostgreSQL thì có thể sử dụng option [CONCURRENTLY](http://postgresguide.com/performance/indexes.html). 
+        * Khi chúng ta tạo index bình thường sẽ lock các query insert update delete của table đang index hiện tại, nếu như table với lượng data rất lớn thì khi tạo index sẽ mất rất nhiều thời gian. Khi đó những query CUD đến sẽ không excute được gây ra lỗi. Khi ta thêm option CONCURRENTLY, PostgreSQL sẽ không lock các query CUD nhưng bù lại nó sẽ gây tốn resource nhiều hơn.
 #### 7. Xóa indexes:
   - An toàn
 
 *Note:*
 
-Những thông tin trên sẽ đúng với PostgreSQL và MySQL. Tất nhiên nó cũng sẽ đúng với hầu hết với Database engine khác, nhưng đối với với mỗi Database Engine nó sẽ có cách hiện thực cụ thể khác nhau. Với database MySQL ta có thể dùng gem 'lhm' (https://github.com/soundcloud/lhm) của SoundCloud để giúp bạn xử lý các trường hợp downtime khi dùng MySQL
+Những thông tin trên sẽ đúng với PostgreSQL và MySQL. Tất nhiên nó cũng sẽ đúng với hầu hết với Database engine khác, nhưng đối với với mỗi Database Engine nó sẽ có cách hiện thực cụ thể khác nhau. Với database MySQL ta có thể dùng [gem 'lhm'](https://github.com/soundcloud/lhm) của SoundCloud để giúp bạn xử lý các trường hợp downtime khi dùng MySQL
 
 ### Tổng kết
 
