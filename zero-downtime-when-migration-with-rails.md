@@ -52,7 +52,7 @@ Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đ�
     + Với MySQL thì ta có thể sử dụng [gem 'lhm'](https://github.com/soundcloud/lhm).
         * Ý tưởng cơ bản của gem 'lhm' là tạo ra `temporary table` khi thực hiện quá trình migration. Điều này sẽ tránh việc khóa bảng trong quá trình migration.
     + Với PostgreSQL thì có thể sử dụng option [CONCURRENTLY](http://postgresguide.com/performance/indexes.html). 
-        * Bình thường khi chúng ta tạo indexes PostgreSQL sẽ lock các query INSERT, UPDATE, DELETE của table đang index hiện tại, nếu như table với lượng data rất lớn thì khi tạo index sẽ mất rất nhiều thời gian. Khi đó những query CUD đến sẽ không excute được gây ra lỗi. Khi ta thêm option CONCURRENTLY, PostgreSQL sẽ không lock các query CUD nhưng bù lại nó sẽ gây tốn resource nhiều hơn.
+        * Bình thường khi chúng ta tạo indexes PostgreSQL sẽ lock các query INSERT, UPDATE, DELETE của table đang indexes hiện tại, nếu như table với lượng data rất lớn thì khi tạo indexes sẽ mất rất nhiều thời gian. Khi đó những query CUD đến sẽ không excute được gây ra lỗi. Khi ta thêm option CONCURRENTLY, PostgreSQL sẽ không lock các query CUD nhưng bù lại nó sẽ gây tốn resource nhiều hơn.
 #### 7. Xóa indexes:
   - An toàn
 
