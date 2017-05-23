@@ -18,7 +18,7 @@ Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đ�
   - Không an toàn. Nguyên nhân bởi vì ứng dụng vẫn đang sử dụng column cũ.
   - Cách xử lý:
     Tách quá trình deploy thành 3 giai đoạn
-    + Giai đoạn 1: Làm cho ứng dụng đang sử dụng tạm thời ignore column đó
+    + Giai đoạn 1: Làm cho ứng dụng đang sử dụng tạm thời ignore column đó và loại bỏ những đoạn code đang sử dụng column đó.
       Ví dụ ở đây mình muốn remove column username trong model User:
     ```
       class User < ActiveRecord::base
@@ -45,13 +45,14 @@ Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đ�
     - Tương tự với cách xử lý với xóa columns. Tách quá trình deploy thành 2 giai đoạn:
     + Giai đoạn 1: Làm cho ứng dụng hoàn toàn không sử dụng tables đó
     + Giai đoạn 2: Deploy migration để remove tables lên
-#### 6. Tạo indexs:
-  - Không an toàn. Nguyên nhân bởi vì quá trình tạo indexs sẽ lock database một khoảng thời gian nhất định
+#### 6. Tạo indexes:
+  - Không an toàn. Nguyên nhân bởi vì quá trình tạo indexes sẽ lock database một khoảng thời gian nhất định
   - Cách xử lý:
     + Tùy từng loại database ta có những cách xử lý khác nhau.
-    + Với MySQL thì ta có thể sử dụng gem 'lhm'
-    + Với PostgreSQL thì có thể sử dụng option concurrently.
-#### 7. Xóa indexs:
+    + Với MySQL thì ta có thể sử dụng gem 'lhm' (https://github.com/soundcloud/lhm).
+    + Với PostgreSQL thì có thể sử dụng option concurrently (http://postgresguide.com/performance/indexes.html). 
+        * Về cơ bản v
+#### 7. Xóa indexes:
   - An toàn
 
 *Note:*
@@ -60,4 +61,4 @@ Những thông tin trên sẽ đúng với PostgreSQL và MySQL. Tất nhiên n�
 
 ### Tổng kết
 
-Sẽ có lúc bạn cần triển khai ứng dụng lên với những thay đổi về database, và việc không gián đoạn ứng dụng và làm ứng dụng mới thích ứng với database structure sẽ là điều rất tuyệt vời. Hy vọng với bài viết trên sẽ giúp các bạn có checklist của mình.
+Sẽ có lúc bạn cần triển khai ứng dụng lên với những thay đổi về database, và việc không gián đoạn ứng dụng và làm ứng dụng mới thích ứng với database structure sẽ là điều rất tuyệt vời. Hy vọng với bài viết trên sẽ giúp các bạn có thêm item trong deployment checklist của mình.
