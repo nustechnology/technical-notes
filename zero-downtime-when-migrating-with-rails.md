@@ -1,6 +1,6 @@
 ### Xử lý vấn đề downtime lúc migrate database của Rails app
 
-Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đề cập tới Rails app, nhưng nó cũng có thể sử dụng cho tất cả mọi ứng dụng web app khác.) không bị downtime? Với bài viết này mình sẽ giới thiệu một số nguyên nhân gây downtime khi migration database.
+Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đề cập tới Rails app, nhưng nó cũng có thể sử dụng cho tất cả mọi ứng dụng web app khác) không bị downtime? Với bài viết này mình sẽ giới thiệu một số nguyên nhân gây downtime khi migration database.
 
 ### Những nguyên nhân gây downtime khi nâng cấp database:
   - Việc migrate database chỉ an toàn nếu trạng thái ứng dụng trước khi deploy có thể hoạt động với những thay đổi mới của Database. Bởi vì sẽ có một khoảng thời gian để quá trình deploy hoàn tất (trong khi một phần hoặc toàn bộ thay đổi database đã chạy) trong khi đó ứng dụng cũ vẫn đang được chạy.
