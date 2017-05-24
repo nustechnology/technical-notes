@@ -14,6 +14,7 @@ Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đ�
   + Bước 1: Thêm columns mới với default value là null
   + Bước 2: Set giá trị mặc định bạn muốn cho các records. (Trong file migration)
   + Bước 3: Change column được thêm vào sang NOT NULL
+
 #### 2. Xóa columns:
   - Không an toàn. Nguyên nhân bởi vì ứng dụng vẫn đang sử dụng column cũ.
   - Cách xử lý:
@@ -31,6 +32,7 @@ Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đ�
     ```
     + Giai đoạn 2: Deploy migration để remove cloumn lên. Lúc này ứng dụng cũ sẽ không sử dụng column cũ nữa (trong ví dụ trên là column username)
     + Giai đoạn 3: Xóa đoạn code tạm thời ignore column.
+
 #### 3. Sửa tên column:
   - Không an toàn. Nguyên nhân bởi vì ứng dụng đang sử dụng vẫn đang sử dụng column cũ.
   - Cách xử lý:
@@ -38,21 +40,25 @@ Làm thế nào để deploy ứng dụng Rails (trong bài này tôi chỉ đ�
     + Giai đoạn 1: Thêm column mới, sửa code để ứng dụng ghi giá trị cả columns cũ lẫn columns mới.
     + Giai đoạn 2: Migrate tất cả giá trị từ columns cũ sang columns mới
     + Giai đoạn 3: Xóa columns cũ ra khỏi database
+
 #### 4. Thêm tables: An toàn
+
 #### 5. Xóa tables:
   - Không an toàn. Nguyên nhân bởi vì ứng dụng đang sử dụng vẫn đang sử dụng tables cũ.
   - Cách xử lý:
     - Tương tự với cách xử lý với xóa columns. Tách quá trình deploy thành 2 giai đoạn:
     + Giai đoạn 1: Làm cho ứng dụng hoàn toàn không sử dụng tables đó
     + Giai đoạn 2: Deploy migration để remove tables lên
+
 #### 6. Tạo indexes:
   - Không an toàn. Nguyên nhân bởi vì quá trình tạo indexes sẽ lock database một khoảng thời gian nhất định
   - Cách xử lý:
     + Tùy từng loại database ta có những cách xử lý khác nhau.
     + Với MySQL thì ta có thể sử dụng [gem 'lhm'](https://github.com/soundcloud/lhm).
         * Ý tưởng cơ bản của gem 'lhm' là tạo ra `temporary table` khi thực hiện quá trình migration. Điều này sẽ tránh việc khóa bảng trong quá trình migration.
-    + Với PostgreSQL thì có thể sử dụng option [CONCURRENTLY](http://postgresguide.com/performance/indexes.html). 
+    + Với PostgreSQL thì có thể sử dụng option [CONCURRENTLY](http://postgresguide.com/performance/indexes.html).
         * Bình thường khi chúng ta tạo indexes, PostgreSQL sẽ lock các query INSERT, UPDATE, DELETE của table đang indexes hiện tại, nếu như table với lượng data rất lớn thì khi tạo indexes sẽ mất rất nhiều thời gian. Khi đó những query CUD đến sẽ không excute được gây ra lỗi. Khi ta thêm option CONCURRENTLY, PostgreSQL sẽ không lock các query CUD nhưng bù lại nó sẽ gây tốn resource nhiều hơn.
+
 #### 7. Xóa indexes:
   - An toàn
 
