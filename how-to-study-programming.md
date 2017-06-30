@@ -1,5 +1,5 @@
 
-Bạn đã bao giờ nghĩ rằng 1 trang web như facebook, youtube được tạo ra như thế nào? Bạn muốn tự mình sẽ tạo ra được 1 trang web tương tự nhưng bạn không biết bắt đầu từ đâu? Hôm nay mình xin chia sẽ kinh nghiệm của mình khi bắt đầu tập tễnh vào nghề giúp các bạn có 1 phương pháp học dễ tiếp thu và cảm thấy developer cũng là 1 nghề thú vị như bao nghề khác :)
+Bạn đã bao giờ nghĩ rằng 1 trang web như Facebook, Youtube được tạo ra như thế nào? Bạn muốn tự mình sẽ tạo ra được 1 trang web tương tự nhưng bạn không biết bắt đầu từ đâu? Hôm nay mình xin chia sẻ kinh nghiệm của mình khi bắt đầu tập tễnh vào nghề giúp các bạn có 1 phương pháp học dễ tiếp thu và cảm thấy developer cũng là 1 nghề thú vị như bao nghề khác :)
 
 #### 1. Chọn 1 ngôn ngữ và bắt đầu học
 
@@ -29,7 +29,7 @@ Thực hành theo những gì bạn đã đọc được. Đừng chỉ ngồi �
 
 #### 6. Tiếp tục tìm tòi và cố gắng theo đuổi đến cùng.
 
-Bạn chỉ mất vài giờ để học “Hello world” nhưng bạn cần nhiều thời gian nữa để có thể thành thạo 1 ngôn ngữ. Vì vậy hãy cố gắng code mỗi ngày. Hãy dành 1 khoảng thời gian cố định trong ngày để học và quan trọng hơn hết là thực hành những gì bạn đã học. Hãy làm bài tập, bạn có thể tự nghĩ ra bài tập hoặc tìm những bài tập trên mạng và cố gắng tự hoàn thành nó.
+Bạn chỉ mất vài giờ để học “Hello World” nhưng bạn cần nhiều thời gian nữa để có thể thành thạo 1 ngôn ngữ. Vì vậy hãy cố gắng code mỗi ngày. Hãy dành 1 khoảng thời gian cố định trong ngày để học và quan trọng hơn hết là thực hành những gì bạn đã học. Hãy làm bài tập, bạn có thể tự nghĩ ra bài tập hoặc tìm những bài tập trên mạng và cố gắng tự hoàn thành nó.
 
 Hãy tìm 1 người bạn cùng học với bạn. Bạn bè sẽ tạo động lực cho bạn học nhanh hơn, cùng bạn phân tích vấn đề hoặc đơn giản hơn là tìm đến 1 forum chuyên về ngôn ngữ bạn đang học. Đọc code của người khác, giúp người khác sửa lỗi cũng là 1 cách giúp bạn nhớ code, các khái niệm trong lập trình 1 cách lâu hơn.
 
