@@ -96,7 +96,7 @@ Therefore, `||=` is probably not the right way to go. We have to differentiate b
       end
     end
 
-</br>
+<br/>
 
     # app/models/user.rb
     class User < ActiveRecord::Base
