@@ -60,7 +60,7 @@ class FailUploadAvatarReseter
 end
 ```
 
-They have 2 the same logic is reset avatars of active users
+They have the same logic is reset avatars of active users
 ```
     users.find_each do |u|
       u.avatar = avatar_path
