@@ -2,7 +2,7 @@
 I have a web application and it went to LIVE mode. After this time, lot of issues happened because of user actions and server limitation. Although I fixed such issues, I want to monitor this server to detect similar ones and I have some ways to monitor server resources also. I researched at Internet and created my own monitor process. Now I will share with you how I manage my live server.
 
 #### Solution
-I separate my maintenance process into two small ones. They are daily maintenance , weekly maintenance, monthly maintenance and bi-annual maintenance. Then I put monitor/maintenance tasks into appropriate categories based on how important of this task and how frequently this task should be made.
+I separate my maintenance process into small ones. They are daily maintenance , weekly maintenance, monthly maintenance and bi-annual maintenance. Then I put monitor/maintenance tasks into appropriate categories based on how important of those tasks and how frequently those tasks should be made.
 
 #### Daily maintenance
 Here are some tasks I made daily. They take about 15 - 30 minutes to do
