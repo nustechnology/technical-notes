@@ -1,16 +1,20 @@
 # DRY in Ruby
 
-The story of a coder. Coder can write some code, implement some features and system works well across many months.
-Some features can have the same logic and behavior, coder can copy existing codes and paste them everywhere in project and system still works well, okay fine!.
+#### The story of a coder
+
+Coder can write some code, implement some features and system works well across many months.
+Some features can have the same logic and behavior, coder can copy existing code and paste them everywhere in project and system still works well, okay fine!.
 
 System logic can have some SMALL changes and some small changes can regard to the features have the same logic, coder can update all places where apply the changes, system still works well.
 
 Sometimes system will have the BIG changes and the changes refer to so many places where are having the same behavior copied before but using different source code.
 Coder continue copy & paste. WTF? copy & paste? anything else to do?
 
-The story of a developer. If some features have the same behavior, they will share the same logic code for these features.
+#### The story of a developer
 
-If the system has some SMALL changes or BIG changes, they will only update the changes on share and it will affect to regarding places.
+If some features have the same behavior, they will share the same logic code for these features.
+
+If the system has some SMALL changes or BIG changes, they will only update the changes on shared code and it will affect to regarding places.
 
 ## Prerequisites
 - Having basic knowledge of OOP
@@ -19,7 +23,7 @@ If the system has some SMALL changes or BIG changes, they will only update the c
 
 ## Context
 
-Take a look simple example of 2 class that have function reset avatars of selected users. The first class, it resets exceed limited size avatars
+Take a look at a simple example of 2 classes that have reset avatars function of selected users. The first class, it resets exceed limited size avatars
 
 ```
 class ExceedLimitedSizeAvatarReseter
@@ -41,6 +45,7 @@ end
 ```
 
 Next class, it resets fail upload avatars
+
 ```
 class FailUploadAvatarReseter
   attr_reader :avatar_path
