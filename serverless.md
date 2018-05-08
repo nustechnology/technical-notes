@@ -10,6 +10,9 @@ However, in the cloud computing age, this may not be exactly correct anymore wit
 <center>
   <img src="assets/images/serverless/serverless_aws.png">
 </center>
+<center><i>Demonstrated image from AWS</i></center>
+
+<br />
 
 1. [AWS S3](https://aws.amazon.com/s3/) (too familiar, right?) to host the frontend assets. E.g: React application
 2. [AWS DynamoDB](https://aws.amazon.com/dynamodb/) (a managed NoSQL service from AWS) for storing data
