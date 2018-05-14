@@ -84,7 +84,8 @@ Sau khi tạo xong Dockerfile mọi người có thể Build image từ Dockerfi
 
 Chờ một chút và pha ly cà phê uống (nếu may mắn Dockerfile chúng ta viết đúng chạy hết nếu không bạn fix lỗi rồi chạy lại ) chúng ta sẽ có image của dự án mình rồi.
 
-`docker run -v ~/projects/docker_demo:/app demo_rails`
+`docker run -v ~/projects/docker_demo:/app -p 3000:3000 demo_rails`
+![alt text][docker_builded]
 
 Và chúng ta sẽ có kết quả sau:
 
@@ -99,3 +100,4 @@ Bạn đã sẵn sàng để chạy ứng dụng của bạn trong Docker chưa?
 
 [rails_docker]: https://i.imgur.com/VriHunR.png "Rails Docker"
 [docker_building]: https://i.imgur.com/16ws3ZC.png "Docker building"
+[docker_builded]: https://i.imgur.com/fe4ZX9J.png "Docker builded"
