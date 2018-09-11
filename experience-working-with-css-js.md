@@ -11,7 +11,7 @@
 
     Mục đích: dễ dàng tìm và sửa lỗi đúng nơi, đúng chỗ
 
-    Giả sử ta có cây thư mục views như sau:
+    Giả sử ta có folder views như sau:
 
     ```
       views
@@ -31,14 +31,14 @@
         - new_campaign.scs
     ```
 
-*   1.2 Quy tắt xếp chồng (Nested Rules)
+*   1.2 Quy tắc xếp chồng (Nested Rules)
 
     Mục đích: chỉ apply css lên các 'child' elements của một parent element nào đó.
 
     Giả sử bây giờ mình có một cây HTML như sau:
 
     ```
-    <div class="menu-container">
+    <div class='menu-container'>
       <ul class='ul-class'>
         <li class='li-class'>Trang chủ</li>
         <li class='li-class'>Blog</li>
@@ -59,9 +59,9 @@
     }
     ```
 
-    Hoặc có thể nối một class của parent elm bằng cách dùng dấu `&` vào trước phần tử đó.
+    Hoặc có thể nối một class của parent element bằng cách dùng dấu `&` vào trước phần tử đó.
 
-    vd đoạn code trên nhưng thêm class `li-class2` cho `li` và có color red thì viết lại như sau:
+    Ví dụ đoạn code trên nhưng thêm class `li-class2` cho `li` và có color red thì viết lại như sau:
 
     ```
     <li class='li-class li-class2'>Blog</li>
@@ -80,13 +80,13 @@
     }
     ```
 
-*   1.3 Luôn luôn sử dụng class để modified css
+*   1.3 Luôn luôn sử dụng class để modifiy css
 
-    Tránh trường hợp modified css qua tag element vd như `div`, `p`..như vậy sẽ dẫn đến trường hợp code mình chạy đúng mà ảnh hưởng chỗ khác
+    Tránh trường hợp modified css qua tag element vd như `div`, `p`... như vậy sẽ dẫn đến trường hợp code mình chạy đúng mà ảnh hưởng chỗ khác
 
-*   1.4 Sử dụng biến: $tên_biến
+*   1.4 Sử dụng biến: $variable
 
-    Khai báo một giá trị mà ta có thể sử dụng nhiều lần để dễ maintain và thống nhất. Thường đặt ở đầu file
+    Khai báo một giá trị mà ta có thể sử dụng nhiều lần để dễ maintain và thống nhất, thường được đặt ở đầu file
 
     Thường dùng để set giá trị height, border, shadow, color...
     ```
@@ -105,7 +105,7 @@
     }
     ```
 
-**2\. Kinh nghiệm làm việc với j**
+**2\. Kinh nghiệm làm việc với js**
 
 *   1.1 Add `ref` cho element có bind event
 
@@ -137,7 +137,7 @@
     2. `console.warn()` # log message as warning
     3. `console.error()` # log message as error
 
-    Set style cho log message(color, background...)
+    Set style cho log message (color, background...)
 
     vd:
 
@@ -148,7 +148,7 @@
     <a href="https://ibb.co/kj3kjo"><img src="https://preview.ibb.co/bNV9AT/Screen_Shot_2018_06_25_at_6_24_44_PM.png" alt="Screen_Shot_2018_06_25_at_6_24_44_PM" border="0"></a>
 
 
-    `console.trace()`: log ra dấu vết ngăn xếp, hiển thị ra đường dẫn 'cuộc gọi' được thực hiện để đạt đến điểm gọi `console.trace()`
+    `console.trace()`: log ra stack trace đến điểm gọi `console.trace()`
 
     ```
     var getUser = function() {
@@ -169,5 +169,5 @@
 
 **III. Kết.**
 
-Hy vọng với một số chia sẽ trên sẽ giúp các dev có thể code và debug nhanh hơn. Và đừng quên chia sẽ những kinh nghiệm khác của bạn với mọi
+Hy vọng với một số chia sẻ trên sẽ giúp các dev có thể code và debug nhanh hơn. Và đừng quên chia sẻ những kinh nghiệm khác của bạn với mọi người
 
