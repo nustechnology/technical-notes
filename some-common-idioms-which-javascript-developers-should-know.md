@@ -7,6 +7,7 @@ Javascript is moving fast these days. Lots of great features were added to ES6 (
 
 Eric Elliott, a famous JS developer/writer, calls **Prototypal Inheritance** and **Functional Programming** as the two pillars of JavaScript. Have you ever heard about these paradigms? I'll give you an overview of them and some other exciting concepts in this post.
 
+
 ## Inheritance
 
 There are 2 types of inheritance in JS: **Prototypal Inheritance** (which Eric calls the pillar of JavaScript) and **Class Inheritance**. What are differences between them? Let's clarify.
