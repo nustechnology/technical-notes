@@ -22,7 +22,7 @@ render(){
   return <User name={user.name} age={user.age}/>
 }
 ```
-Mỗi khi user thay đổi, Component User sẽ nhận được Props mới
+Trong ví dụ trên, mỗi khi state user của Component cha thay đổi, Component User sẽ nhận được Props mới
 
 #### State là gì?
 
@@ -30,7 +30,7 @@ State là 1 thành phần của Component, nó là một object có thể thay �
 
 #### Cách khởi tạo State?
 
-Có 2 cách để khởi tạo state, 1 là bên trong `constructor` của class Component, 2 là bên trong callback `getDerivedStateFromProps` của Component
+Có 2 cách để khởi tạo state, 1 là bên trong constructor của class Component, 2 là bên trong callback getDerivedStateFromProps của Component
 
 *1. Khởi tạo State bằng Component constructor*
 
@@ -68,15 +68,24 @@ class User extends Component {
   return newState;
 }
 ```
+Trong ví dụ trên, name và age của object user trong State sẽ được reset về 2 props name và age mỗi khi props thay đổi
 
 #### Làm cách nào để thay đổi State?
 
-Nếu chúng ta gán trực tiếp `this.state.user.name = "Ken"`, chúng ta sẽ nhận được 1 warning từ React và điều này thật sự không đúng đắn, một trong những hậu quả là Component sẽ không tự render lại view, dẫn đến những thay đổi ở State sẽ không được phản ánh ra view.
+Nếu chúng ta gán trực tiếp this.state.user.name = "Ken", chúng ta sẽ nhận được 1 warning từ React và điều này thật sự không đúng đắn, một trong những hậu quả là Component sẽ không tự render lại view, dẫn đến những thay đổi ở State sẽ không được phản ánh ra view.
 
-Cách duy nhất để thay đổi State là `this.setState`
+Cách duy nhất để thay đổi State là this.setState
 
 ```
 let user = {...this.state.user}
 user.name = "Ken"
 this.setState({user: user})
 ```
+
+#### Kết luận
+
+Props và State là 2 thành phần của Component.
+Bên trong Component, Props là thành phần bất biến trong khi đó State là thành phần có thể biến đổi.
+Props của Component sẽ thay đổi nếu giá trị truyền vào từ bên ngoài thay đổi, còn State được khởi tạo và thay đổi nội tại Component.
+Sự thay đổi của Props cũng có thể ảnh hưởng đến giá trị của State.
+
