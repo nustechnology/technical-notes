@@ -19,7 +19,7 @@ Remember the last time you're on a large project, or maybe on a codebase that pe
 > Technical debt (also known as design debt or code debt) is a concept in software development that reflects the implied cost fo additional rework caused by choosing an easy solution now instead of using a better approach that would take longer.
 
 ### How to increase your code quality?
-If you've reflected on your code and wondered if you could have made it better, then this series is just for you. Sometimes you might need to have a strong motivation on the go. I suggest to chose wisely something that matters you the most.  Below is a quote from Mr. Chien that you can keep in mind as your guide.
+If you've reflected on your code and wondered if you could have made it better, then this series is just for you. Sometimes you might need to have a strong motivation on the go. I suggest to chose wisely something that matters you the most. Below is a quote from Mr. ChienTX that you can keep in mind as your guide.
 
 > You're not writing code, you're writing your profile.
 
