@@ -55,4 +55,4 @@ Trong rails console kết quả vừa thực thi được mặc định gán cho
 
 *  Hy vọng một số tricks trên sẽ giúp các bạn sử dùng console cho công việc hiệu quả hơn.
 
-*Nguồn: [https://medium.com/@lfv89/rails-console-magic-tricks-da1fdd657d32](https://medium.com/@lfv89/rails-console-magic-tricks-da1fdd657d32)*
+*Reference: [https://medium.com/@lfv89/rails-console-magic-tricks-da1fdd657d32](https://medium.com/@lfv89/rails-console-magic-tricks-da1fdd657d32)*
