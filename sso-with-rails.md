@@ -67,6 +67,7 @@ Here some basic steps to use [omniauth](https://github.com/omniauth/omniauth) fo
 - Finally, when user go to your application, if user haven't logged in yet, you will redirect user to `/auth/<provider>` for start the SSO authentication flow
 
 **Build a SSO authentication from scratch**
+
 This is OK if you want to set up a SSO system for your owned projects. Here's my example to implement it with SAML.
 
 Firstly, you need to build a central SSO server. We will use [saml_idp](https://github.com/saml-idp/saml_idp) with some steps:
