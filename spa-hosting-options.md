@@ -5,7 +5,7 @@ SPA (single-page application) becomes popular nowadays due to its undoubtable ad
 
 That's how we structure the system in coding. How's about the infrastructure design?
 
-####1. Traditional approach
+#### 1. Traditional approach
 
 <center>
   <img src="assets/images/spa-hosting-options/traditional.png">
@@ -26,7 +26,7 @@ Although this seems to be easier for the beginners (because they can use the fam
 - Unnecessary builds for backend/frontend if we need updates on one of them only, i.e: we need to deploy both frontend and backend although we only need to change frontend
 - A bit more difficult to let the frontend developers jump into the frontend part because the frontend developers are often not familiar to backend frameworks
 
-####2. Modern approach
+#### 2. Modern approach
 
 <center>
   <img src="assets/images/spa-hosting-options/modern.png">
