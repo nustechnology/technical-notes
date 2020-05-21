@@ -1,6 +1,6 @@
 # Ruby Metaprogramming
 
-![](https://i.ibb.co/hcgsGYd/ruby.png)
+![](https://i.ibb.co/ZKTYMH2/RUBY-METAPROGRAMMING.png)
 
 Metaprogramming is a technique which can help us to write code that writes code by itself dynamically at runtime to generate objects, methods, functions, etc. Using metaprogramming you can reopen and modify classes, catch methods that don’t exist and create them on the fly, etc. Metaprogramming at first may seem to be an advanced topic, suitable only for programming language gurus, but it's not really that difficult once you know how to use. Let's discover it in this post.
 
