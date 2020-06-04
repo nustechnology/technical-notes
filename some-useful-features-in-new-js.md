@@ -108,13 +108,13 @@ document.addEventListener("mouseenter", hello);
 
 This feature that allows you to work with strings in a novel way compared to ES5 and below.
 
-The syntax at a first glance is very simple, just use backticks instead of single or double quotes:
+The syntax is very simple, just replace single or double quotes by backticks:
 
 ```
 const a_string = `something`
 ```
 
-Template literals can contain placeholders — which are indicated as `${expression}`. This syntax allows us to put not just variable but any code expression in it.
+Template literals can contain placeholders - `${expression}`. This syntax allows us to put not only variable but also code expression in it.
 
 ```
 let welcome = "Hello " + (isWorld ? "World" : "me");
@@ -126,10 +126,50 @@ Now it is just simple like this:
 let welcome = `Hello ${isWorld ? "World" : "me"}!`;
 ```
 
-No more `()` to make sure the code result is correct.
+We can say goodbye to `... + <variable> + " " + <variable> + ...`, we no longer need `+` or `" "` to compute a dynamic string.
 
-And of course, we can say goodbye to `... + <variable> + " " + <variable> + ...`, we no longer need `+` or `" "` to compute a dynamic string.
+Template literals also help us to use multiline strings much simpler. Before ES6, to create a string over two lines we have to use the `\` character at the end of a line:
 
+```
+const string =
+  'first part of string \
+second part of string'
+```
+
+It creates a string on 2 lines, but it’s rendered on just one line:
+
+```
+first part of string second part of string
+```
+
+To render the string on multiple lines, we need to add `\n` at the end of each line:
+
+```
+const string =
+  'first part of string\n \
+second part of string'
+```
+
+But with ES6 template string, it is simple as
+
+```
+const string = `first part of string
+second part of string`
+```
+
+Please notice that space is meaningful, if we do:
+
+```
+const string = `first part of string
+                second part of string`
+```           
+
+it creates a string like this:     
+
+```
+first part of string
+                second part of string
+```                
 
 ### References
 
